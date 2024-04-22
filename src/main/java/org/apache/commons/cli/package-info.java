@@ -16,8 +16,6 @@
  */
 
 /**
- * Commons CLI 1.3
- * 
- * @version $Id: package-info.java 1443102 2013-02-06 18:12:16Z tn $
+ * Apache Commons CLI provides a simple API for presenting, processing and validating a Command Line Interface.
  */
 package org.apache.commons.cli;

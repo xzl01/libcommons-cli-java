@@ -1,3 +1,146 @@
+Apache Commons CLI
+Version 1.6.0
+Release Notes
+
+
+This document contains the release notes for this version of the Apache Commons 
+CLI Component of the Apache Commons Project. Commons CLI provides a simple API
+for working with the command line arguments and options.
+
+Apache Commons CLI provides a simple API for presenting, processing and validating a Command Line Interface.
+
+New features and bug fixes
+
+Changes in this version include:
+
+
+Fixed Bugs
+==========
+
+o           [StepSecurity] ci: Harden GitHub Actions #176. Thanks to step-security-bot, Gary Gregory.
+o CLI-318:  Inconsistent date format in changes report. Thanks to Alexander Veit, Gary Gregory.
+o CLI-283:  Fix NPE in CommandLine.resolveOption(String). Thanks to Dilraj Singh, Gary Gregory.
+o CLI-283:  CommandLine.addOption(Option) should not allow a null Option. Thanks to Dilraj Singh, Gary Gregory.
+o CLI-283:  CommandLine.addArgs(String) should not allow a null String. Thanks to Gary Gregory.
+o CLI-303:  Site docs: "Usage Scenarios" refers to deprecated methods. Thanks to Julian Schilling, Gary Gregory.
+o CLI-317:  NullPointerException thrown by CommandLineParser.parse(). Thanks to Philippe Bastiani, Sruteesh Kumar Paramata, Gary Gregory.
+o CLI-313:  StringIndexOutOfBoundsException thrown by CommandLineParser.parse(). Thanks to Dominik Stadler, HUNG LU, Sruteesh Kumar Paramata.
+
+Updates
+=======
+
+o           Fix SpotBugs Error: Medium: Method intentionally throws RuntimeException. [org.apache.commons.cli.Option] At Option.java:[lines 417-423] THROWS_METHOD_THROWS_RUNTIMEEXCEPTION Thanks to Gary Gregory.
+o           Fix SpotBugs Error: Medium: Method intentionally throws RuntimeException. [org.apache.commons.cli.Option] At Option.java:[lines 446-450] THROWS_METHOD_THROWS_RUNTIMEEXCEPTION Thanks to Gary Gregory.
+o           Fix SpotBugs Error: Medium: Method intentionally throws RuntimeException. [org.apache.commons.cli.Option] At Option.java:[lines 474-478] THROWS_METHOD_THROWS_RUNTIMEEXCEPTION Thanks to Gary Gregory.
+o           Use EMPTY_STRING_ARRAY constant. #102. Thanks to Ken Dombeck.
+o           Fix site links that are broken #155. Thanks to Arturo Bernal.
+o           Use Math.max() #111. 
+            Delete unused assignment #112. Thanks to Arturo Bernal.
+o           Add github/codeql-action. Thanks to Dependabot, Gary Gregory.
+o           Bump Java from 7 to 8. Thanks to Gary Gregory.
+o           Bump actions/cache from 2.1.7 to 3.0.10 #97, #130, #132. Thanks to Dependabot, Gary Gregory.
+o           Bump actions/checkout from 3 to 3.1.0 #133. Thanks to Gary Gregory, Dependabot.
+o           Bump actions/setup-java from 2 to 3.6.0 #136. Thanks to Gary Gregory.
+o           Bump spotbugs from 4.5.3 to 4.7.3 #96, #107, #113, #125, #138. Thanks to Gary Gregory, Dependabot.
+o           Bump spotbugs-maven-plugin from 4.5.3.0 to 4.7.3.0 #98, #108, #115, #117, #126, #145. Thanks to Dependabot.
+o           Bump commons-parent from 52 to 64 #100, #128, #151, #158. Thanks to Dependabot, Gary Gregory.
+o           Bump maven-antrun-plugin from 3.0.0 to 3.1.0 #103. Thanks to Dependabot.
+o           Bump maven-javadoc-plugin from 3.3.2 to 3.4.1 #105, #120. Thanks to Dependabot.
+o           Bump maven-pmd-plugin from 3.16.0 to 3.19.0 #110, #124. Thanks to Dependabot.
+o           Bump jacoco-maven-plugin from 0.8.7 to 0.8.8. Thanks to Gary Gregory.
+o           Bump maven-checkstyle-plugin from 3.1.2 to 3.2.0 #121. Thanks to Gary Gregory.
+o           Bump japicmp-maven-plugin from 0.15.4 to 0.16.0. Thanks to Gary Gregory.
+o           Update JUnit 4 to 5 vintage. Thanks to Gary Gregory.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-cli/changes-report.html
+
+For complete information on Apache Commons CLI, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons CLI website:
+
+https://commons.apache.org/proper/commons-cli/
+
+Download page: https://commons.apache.org/proper/commons-cli/download_cli.cgi
+
+Have fun!
+The Apache Commons Team
+
+------------------------------------------------------------------------------
+
+Apache Commons CLI
+Version 1.5.0
+Release Notes
+
+
+This document contains the release notes for this version of the Apache Commons 
+CLI Component of the Apache Commons Project. Commons CLI provides a simple API
+for working with the command line arguments and options.
+
+Apache Commons CLI provides a simple API for presenting, processing and validating a Command Line Interface.
+
+New features and bug fixes (Java 7).
+
+Changes in this version include:
+
+New Features
+============
+
+o CLI-217:  Accommodate toggling partial matching in DefaultParser. Thanks to Rubin Simons.
+o CLI-274:  Option parser type EXISTING_FILE_VALUE not check file existing Thanks to Béla Schaum.
+o CLI-271:  CommandLine.getXXX and CommandLine.hasXXX should accept an Option as a parameter Thanks to Christoph Läubrich.
+o CLI-276:  Adjust access-modifier of checkRequiredOptions() to protected. Thanks to Jason Dillon.
+o CLI-282:  TypeHandler should throw ParseException for an unsupported class. Thanks to Alex Nordlund.
+o           Added setter for Builder.option #33. Thanks to Waldemar Sojka, Gary Gregory.
+o           Add Option unit tests #76. Thanks to Waldemar Sojka, Gary Gregory.
+
+Fixed Bugs
+==========
+
+o           Fix NPE in DefaultParser.isLongOption(String). Thanks to Gary Gregory.
+o CLI-279:  @param or @return lines should end with a period in CommandLine.java Thanks to Krishna Mohan Rao Kandunoori.
+o           Replace deprecated FindBugs with SpotBugs. Thanks to Gary Gregory.
+o           Replace CLIRR with JApiCmp. Thanks to Gary Gregory.
+o           Option Javadocs grammar nits #55. Thanks to Elliotte Rusty Harold.
+o           Minor Improvements #57, #61. Thanks to Arturo Bernal, Gary Gregory.
+o CLI-254:  Input "test" gets parsed as test, quotes die #58. Thanks to stoty.
+o CLI-287:  Allow whitespace-only header and footer #26. Thanks to MrQubo, Gary Gregory.
+
+Updates
+=======
+
+o CLI-294:  Update Java from version 5 to 7.
+o           Docs: Replace OptionBuilder in usage page #30. Thanks to Mincong Huang.
+o           Remove deprecated sudo setting. #36. Thanks to dengliming.
+o           Bump junit:junit from 4.12 to 4.13.2, #53, #60. Thanks to Gary Gregory, Dependabot.
+o           Bump commons-parent from 48 to 52. Thanks to Dependabot.
+o           Bump maven-pmd-plugin from 3.12.0 to 3.15.0, #44, #54, #67. Thanks to Dependabot.
+o           Bump actions/checkout from v2.3.1 to v2.3.5 #46, #72. Thanks to Dependabot.
+o           Bump actions/setup-java from v1.4.2 to v2 #50. Thanks to Dependabot, Gary Gregory.
+o           Bump maven-antrun-plugin from 1.7 to 3.0.0 #43. Thanks to Dependabot.
+o           Bump maven-checkstyle-plugin from 2.15 to 3.1.2 #41. Thanks to Gary Gregory.
+o           Bump checkstyle to 9.0.1 #68. Thanks to Gary Gregory.
+o           Bump actions/cache from 2 to 2.1.6 #64, #65. Thanks to Dependabot.
+o           Bump commons.animal-sniffer.version 1.19 -> 1.20. Thanks to Gary Gregory.
+o           Bump maven-bundle-plugin 5.1.1 -> 5.1.2. Thanks to Gary Gregory.
+o           Bump biz.aQute.bndlib.version 5.1.2 -> 6.0.0. Thanks to Gary Gregory.
+o           Bump spotbugs from 4.4.1 to 4.4.2 #70. Thanks to Dependabot.
+o           Bump spotbugs-maven-plugin from 4.4.1 to 4.4.2.2 #71. Thanks to Dependabot.
+
+
+Historical list of changes: https://commons.apache.org/proper/commons-cli/changes-report.html
+
+For complete information on Apache Commons CLI, including instructions on how to submit bug reports,
+patches, or suggestions for improvement, see the Apache Commons CLI website:
+
+https://commons.apache.org/proper/commons-cli/
+
+Download page: https://commons.apache.org/proper/commons-cli/download_cli.cgi
+
+Have fun!
+The Apache Commons Team
+
+------------------------------------------------------------------------------
+
             Apache Commons CLI
                 Version 1.4
                Release Notes
@@ -14,7 +157,7 @@ previous versions, except for the OptionValidator class that is no longer public
 (change introduced in v1.2). Commons CLI 1.4 at least requires Java 5.0.
 
 More information can be found on the project site at
-http://commons.apache.org/cli.
+https://commons.apache.org/cli.
 
 
 NEW FEATURES
@@ -169,7 +312,7 @@ BUG FIXES
 =========
 
 o CLI-137: The number of arguments defined for an option specifies the
-           arguments per occurence of the option and not for all occurences.
+           arguments per occurrence of the option and not for all occurrences.
 o CLI-164: PosixParser no longer ignores unrecognized short options.
 o CLI-163: PosixParser no longer stops the bursting process of a token if
            stopAtNonOption is enabled and a non option character is
@@ -239,13 +382,13 @@ o CLI-135: Backwards compatibility between 1.1 and 1.0 broken due to
            Option.addValue removal.
 
 
-Historical list of changes: http://commons.apache.org/cli/changes-report.html
+Historical list of changes: https://commons.apache.org/cli/changes-report.html
 
 For complete information on Commons CLI, including instructions on how to
 submit bug reports, patches, or suggestions for improvement, see the
 Apache Commons CLI website:
 
-http://commons.apache.org/cli/
+https://commons.apache.org/cli/
 
 Have fun!
 -Apache Commons CLI team

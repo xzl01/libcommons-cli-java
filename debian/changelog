@@ -1,3 +1,22 @@
+libcommons-cli-java (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release
+    - Updated the Maven rules
+    - Updated the OSGi metadata
+  * Standards-Version updated to 4.6.2
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Fri, 05 Jan 2024 17:16:17 +0100
+
+libcommons-cli-java (1.5.0-1) unstable; urgency=medium
+
+  * New upstream release
+    - Updated the Maven rules
+    - Updated the OSGi metadata
+  * Standards-Version updated to 4.6.1
+  * Track and download the new releases from GitHub
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Sun, 27 Nov 2022 23:09:10 +0100
+
 libcommons-cli-java (1.4-2) unstable; urgency=medium
 
   * Team upload.
